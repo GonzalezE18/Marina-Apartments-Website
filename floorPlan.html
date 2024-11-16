@@ -7,58 +7,93 @@
     <link rel="stylesheet" href="styles.css">
     <script src="app.js" defer></script>
 </head>
-
 <body>
 
+    <nav>
+        <img class="toplogo" src="images/Marina.png" alt="Logo" />
+        
+        <!-- Hamburger icon -->
+        <div class="hamburger" id="hamburger-icon">
+            &#9776; <!-- Hamburger symbol -->
+        </div>
+        
+        <div class="link-group" id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="floorPlan.html">Floor Plans</a>
+            <a href="amenities.html">Amenities</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="neighborhood.html">Neighborhood</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
 
-<nav>
-    <img class="toplogo" src="images/Marina.png" />
-    <div class="link-group">
-        <a href="index.html">Home</a>
-        <a href="floorPlan.html">Floor Plans</a>
-        <a href="amenities.html">Amenities</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="neighborhood.html">Neighborhood</a>
-        <a href="contact.html">contact</a>
-    </div>
-</nav>
+    <script>
+        // Get the hamburger icon and nav links container
+        const hamburger = document.getElementById("hamburger-icon");
+        const navLinks = document.getElementById("nav-links");
 
-<main>
-    <h2>Marina Apartments Floor Plans</h2>
-    <p>Choose from our range of thoughtfully designed floor plans:</p>
+        // Toggle the "show" class on the navLinks container
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("show");
+        });
+    </script>
+    <main>
+        <h2>Marina Apartments Floor Plans</h2>
+         <p>Choose from our range of thoughtfully designed floor plans:</p>
     
     <div class="floorplans">
         <div class="unit">
             <div class="label">1A</div>
             <p>1 Bedroom</p>
+            <img src="./images/n1b1b600.jpg" alt="Unit 1A Image" />
+            <p>1 Bedroom 1 Bath</p>
             <p>Area: 600 sq ft</p>
+
         </div>
         <div class="unit">
             <div class="label">1B</div>
             <p>1 Bedroom</p>
             <p>Area: 600 sq ft</p>
+            <img src="./images/n1b1b770.jpg" alt="Unit 1B Image" />
+            <p>1 Bedroom 1 Bath</p>
+            <p>Area: 770 sq ft</p>
+
         </div>
         <div class="unit">
             <div class="label">1C</div>
             <p>2 Bedroom</p>
             <p>Area: 800 sq ft</p>
+            <img src="./images/n2b1b915.jpg" alt="Unit 1C Image" />
+            <p>2 Bedroom 1 Bath</p>
+            <p>Area: 915 sq ft</p>
+
         </div>
         <div class="unit">
             <div class="label">1D</div>
             <p>2 Bedroom</p>
             <p>Area: 800 sq ft</p>
+            <img src="./images/n2b2b915.jpg" alt="Unit 1D Image" />
+            <p>2 Bedroom 2 Bath</p>
+            <p>Area: 915 sq ft</p>
+
         </div>
         <div class="unit">
             <div class="label">1E</div>
             <p>Studio</p>
             <p>Area: 400 sq ft</p>
+            <img src="./images/n2b2b1080.jpg" alt="Unit 1E Image" />
+            <p>2 Bedroom 2 Bath</p>
+            <p>Area: 1080 sq ft</p>
         </div>
         <div class="unit">
             <div class="label">1F</div>
-            <p>1 Bedroom</p>
-            <p>Area: 600 sq ft</p>
+                <p>1 Bedroom</p>
+                <p>Area: 600 sq ft</p>
+                <img src="./images/n2b2b1140.jpg" alt="Unit 1F Image" />
+                <p>2 Bedroom 2 Bath</p>
+                <p>Area: 1140 sq ft</p>
+            </div>
         </div>
-    </div>
 </main>
 
 <footer>
