@@ -59,6 +59,11 @@ nav a:hover {
 
 
 }
+.link-group a {
+    color: black;
+    text-decoration: none;
+    font-size: 10px 20px;
+}
 
 /* Main content styles */
 
@@ -266,4 +271,46 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+#nav-links {
+    display: flex;
+}
+.hamburger {
+    display: none;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    /* Hide links on mobile devices */
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    /* Show the hamburger icon on mobile */
+    .hamburger {
+        display: block;
+    }
+
+    /* Make the menu items visible when toggled */
+    #nav-links.show {
+        display: flex;
+    }
+
+    /* Style the links for mobile */
+    .link-group a {
+        font-size: 18px;
+        padding: 10px;
+        color: black;
+        text-align: center;
+        border-bottom: 1px solid white;
+    }
 }
