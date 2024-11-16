@@ -10,16 +10,34 @@
 
 
 <nav>
-    <img class="toplogo" src="images/Marina.png" />
-    <div class="link-group">
-        <a href="index.html">Home</a>
-        <a href="floorPlan.html">Floor Plans</a>
-        <a href="amenities.html">Amenities</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="neighborhood.html">Neighborhood</a>
-        <a href="contact.html">contact</a>
-    </div>
-</nav>
+        <img class="toplogo" src="images/Marina.png" alt="Logo" />
+        
+        <!-- Hamburger icon -->
+        <div class="hamburger" id="hamburger-icon">
+            &#9776; <!-- Hamburger symbol -->
+        </div>
+        
+        <!-- Link group container -->
+        <div class="link-group" id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="floorPlan.html">Floor Plans</a>
+            <a href="amenities.html">Amenities</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="neighborhood.html">Neighborhood</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <script>
+        // Get the hamburger icon and nav links container
+        const hamburger = document.getElementById("hamburger-icon");
+        const navLinks = document.getElementById("nav-links");
+
+        // Toggle the "show" class on the navLinks container
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("show");
+        });
+    </script>
 
 <main>
     <h2>Gallery</h2>
@@ -28,9 +46,10 @@
         <img src="./images/downtown.jpg" alt="View of downtown from the apartment" onclick="openModal(this.src)">
         <img src="./images/interior.jpg" alt="Interior view of an apartment" onclick="openModal(this.src)">
         <img src="./images/livingroom.jpg" alt="Living room of the apartment" onclick="openModal(this.src)">
-        <img src="./images/photo5.jpg" alt="Additional view of the apartment" onclick="openModal(this.src)">
-        <img src="./images/photo6.jpg" alt="Another view of the apartment" onclick="openModal(this.src)">
-        <!-- Add more images as needed -->
+        <img src="./images/petpark.jpeg" alt="dog friendly park" onclick="openModal(this.src)">
+        <img src="./images/resort-walking.jpg" alt="walking resort area" onclick="openModal(this.src)">
+        <img src="./images/idahocrowd.jpg" alt="look of the city" onclick="openModal(this.src)">
+        <img src="./images/idahocoffee.jfif" alt="a cafe close to the apartments" onclick="openModal(this.src)">
     </div>
     
     <div class="modal" id="modal" onclick="closeModal()">
